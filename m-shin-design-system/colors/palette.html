@@ -1,0 +1,109 @@
+<!-- @dsCard group="Colors" -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif; background: #f5f7fa; padding: 32px; }
+  .card { background: #fff; border-radius: 12px; padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+  h2 { font-size: 18px; font-weight: 800; color: #003070; margin-bottom: 24px; }
+  .section { margin-bottom: 28px; }
+  .section-label { font-size: 11px; font-weight: 700; color: #1469C7; letter-spacing: 2px; margin-bottom: 12px; }
+  .swatches { display: flex; gap: 12px; flex-wrap: wrap; }
+  .swatch { border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); width: 140px; }
+  .swatch-color { height: 80px; }
+  .swatch-info { padding: 10px 12px; background: #fff; border: 1px solid #eee; border-top: none; }
+  .swatch-role { font-size: 10px; color: #888; font-weight: 600; }
+  .swatch-name { font-size: 13px; font-weight: 800; color: #1a1a2e; margin: 2px 0; }
+  .swatch-hex { font-size: 11px; color: #555; font-family: monospace; }
+  .swatch-use { font-size: 10px; color: #777; margin-top: 4px; }
+  .rule-box { background: #f0f5ff; border-radius: 8px; padding: 16px 20px; }
+  .rule-item { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 8px; font-size: 13px; color: #333; }
+  .rule-item:last-child { margin-bottom: 0; }
+  .rule-dot { width: 6px; height: 6px; border-radius: 50%; background: #1469C7; margin-top: 5px; flex-shrink: 0; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h2>カラーパレット</h2>
+
+  <div class="section">
+    <div class="section-label">PRIMARY / SUB / BASE</div>
+    <div class="swatches">
+      <div class="swatch">
+        <div class="swatch-color" style="background:#1469C7;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">MAIN COLOR</div>
+          <div class="swatch-name">コバルトブルー</div>
+          <div class="swatch-hex">#1469C7</div>
+          <div class="swatch-use">背景・帯・見出し</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#003070;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">SUB COLOR</div>
+          <div class="swatch-name">ネイビー</div>
+          <div class="swatch-hex">#003070</div>
+          <div class="swatch-use">ロゴ・枠線・テキスト</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#FFFFFF; border:1px solid #e0e0e0;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">BASE</div>
+          <div class="swatch-name">ホワイト</div>
+          <div class="swatch-hex">#FFFFFF</div>
+          <div class="swatch-use">背景・文字・余白</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">ACCENTS</div>
+    <div class="swatches">
+      <div class="swatch">
+        <div class="swatch-color" style="background:#E8192C;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">ACCENT ①</div>
+          <div class="swatch-name">スカーレット</div>
+          <div class="swatch-hex">#E8192C</div>
+          <div class="swatch-use">強調・速報バッジ</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#FFE030;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">ACCENT ②</div>
+          <div class="swatch-name">イエロー</div>
+          <div class="swatch-hex">#FFE030</div>
+          <div class="swatch-use">「合格」バッジ・帯</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#00873C;"></div>
+        <div class="swatch-info">
+          <div class="swatch-role">ACCENT ③</div>
+          <div class="swatch-name">グリーン</div>
+          <div class="swatch-hex">#00873C</div>
+          <div class="swatch-use">合格体験記ラベル</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">配色ルール</div>
+    <div class="rule-box">
+      <div class="rule-item"><div class="rule-dot"></div>外部チラシ：ブルー 70% ／ 白 20% ／ 赤・黄 10%</div>
+      <div class="rule-item"><div class="rule-dot"></div>説明会PPTX：白ベース ＋ ブルー見出し帯、差し色は最小限</div>
+      <div class="rule-item"><div class="rule-dot"></div>「合格」要素には必ずイエローバッジ</div>
+      <div class="rule-item"><div class="rule-dot"></div>速報・緊急情報には赤を使う</div>
+      <div class="rule-item"><div class="rule-dot"></div>4色（青・赤・黄・緑）を同時多用しない</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

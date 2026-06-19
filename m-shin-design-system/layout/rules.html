@@ -1,0 +1,95 @@
+<!-- @dsCard group="Layout" -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif; background: #f5f7fa; padding: 32px; }
+  .card { background: #fff; border-radius: 12px; padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+  h2 { font-size: 18px; font-weight: 800; color: #003070; margin-bottom: 24px; }
+  .section { margin-bottom: 28px; }
+  .section-label { font-size: 11px; font-weight: 700; color: #1469C7; letter-spacing: 2px; margin-bottom: 14px; }
+  .layout-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+  /* チラシレイアウト図 */
+  .flyer-mock { border: 2px solid #1469C7; border-radius: 8px; overflow: hidden; font-size: 10px; }
+  .flyer-top { background: #1469C7; color: #fff; padding: 14px 12px; font-weight: 800; font-size: 12px; text-align: center; }
+  .flyer-top span { display: block; font-size: 9px; font-weight: 400; opacity: 0.8; margin-top: 2px; }
+  .flyer-mid { background: #f5f9ff; padding: 12px; text-align: center; }
+  .big-num { font-size: 28px; font-weight: 900; color: #1469C7; }
+  .flyer-mid-label { font-size: 9px; color: #555; }
+  .flyer-bot { background: #003070; color: #fff; padding: 10px 12px; font-size: 9px; text-align: center; }
+  .flyer-bot a { display: inline-block; background: #FFE030; color: #003070; font-weight: 800; padding: 3px 10px; border-radius: 10px; margin-top: 4px; font-size: 9px; }
+
+  /* PPTXレイアウト図 */
+  .pptx-mock { border: 2px solid #ddd; border-radius: 8px; overflow: hidden; }
+  .pptx-header { background: #1469C7; color: #fff; padding: 10px 12px; font-size: 11px; font-weight: 700; }
+  .pptx-body { padding: 12px; background: #fff; }
+  .pptx-item { display: flex; align-items: flex-start; gap: 6px; margin-bottom: 6px; font-size: 10px; color: #333; }
+  .pptx-dot { width: 5px; height: 5px; border-radius: 50%; background: #1469C7; margin-top: 3px; flex-shrink: 0; }
+  .pptx-footer { background: #f8f8f8; border-top: 1px solid #eee; padding: 6px 12px; display: flex; justify-content: flex-end; font-size: 9px; color: #aaa; }
+
+  .layout-label { font-size: 12px; font-weight: 700; color: #003070; margin-bottom: 8px; }
+  .zone-list { list-style: none; }
+  .zone-list li { display: flex; gap: 8px; padding: 5px 0; font-size: 12px; color: #444; border-bottom: 1px solid #f5f5f5; }
+  .zone-list li:last-child { border-bottom: none; }
+  .zone-tag { font-size: 10px; font-weight: 700; background: #e8f0fe; color: #1469C7; padding: 1px 7px; border-radius: 10px; white-space: nowrap; }
+  .note { background: #fffbea; border: 1px solid #FFE030; border-radius: 8px; padding: 12px 16px; font-size: 12px; color: #555; margin-top: 16px; }
+  .note strong { color: #003070; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h2>レイアウト原則</h2>
+
+  <div class="section">
+    <div class="layout-grid">
+      <div>
+        <div class="layout-label">📄 チラシ・外部配布物</div>
+        <div class="flyer-mock">
+          <div class="flyer-top">キャッチ ＋ メインビジュアル<span>上部 1/3 ─ インパクト最優先</span></div>
+          <div class="flyer-mid">
+            <div class="big-num">134名</div>
+            <div class="flyer-mid-label">実績数字 ・ 日程 ・ 特典 ─ 中部</div>
+          </div>
+          <div class="flyer-bot">
+            会場 ／ 申込方法<br>
+            <a>QRコード 必須</a>
+          </div>
+        </div>
+        <ul class="zone-list" style="margin-top:12px;">
+          <li><span class="zone-tag">上部</span>キャッチ＋写真（インパクト）</li>
+          <li><span class="zone-tag">中部</span>実績・日程・特典</li>
+          <li><span class="zone-tag">下部</span>会場・申込・QR</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="layout-label">🖥 セミナー・PPTX</div>
+        <div class="pptx-mock">
+          <div class="pptx-header">セクションタイトル</div>
+          <div class="pptx-body">
+            <div class="pptx-item"><div class="pptx-dot"></div>白または薄グレー背景</div>
+            <div class="pptx-item"><div class="pptx-dot"></div>青い見出し帯＋タイトル</div>
+            <div class="pptx-item"><div class="pptx-dot"></div>表・グラフ・箇条書き</div>
+            <div class="pptx-item"><div class="pptx-dot"></div>1スライド1テーマ</div>
+          </div>
+          <div class="pptx-footer">── 12</div>
+        </div>
+        <ul class="zone-list" style="margin-top:12px;">
+          <li><span class="zone-tag">背景</span>白 or 薄グレー</li>
+          <li><span class="zone-tag">見出し</span>ブルー帯</li>
+          <li><span class="zone-tag">番号</span>右下 or 左下に必ず表示</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>※ 参考素材について</strong><br>
+    既存のチラシ・PPTXはトンマナの「例」として参照する。レイアウトの完全再現は不要。このガイドのルールに沿っていれば新しいデザインでOK。
+  </div>
+</div>
+</body>
+</html>

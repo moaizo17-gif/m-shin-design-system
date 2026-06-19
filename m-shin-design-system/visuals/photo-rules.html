@@ -1,0 +1,107 @@
+<!-- @dsCard group="Visuals" -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif; background: #f5f7fa; padding: 32px; }
+  .card { background: #fff; border-radius: 12px; padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+  h2 { font-size: 18px; font-weight: 800; color: #003070; margin-bottom: 24px; }
+  .section { margin-bottom: 28px; }
+  .section-label { font-size: 11px; font-weight: 700; color: #1469C7; letter-spacing: 2px; margin-bottom: 14px; }
+
+  .photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px; }
+  .photo-card { border-radius: 10px; overflow: hidden; border: 2px solid #e8f0fe; }
+  .photo-thumb { height: 90px; display: flex; align-items: center; justify-content: center; font-size: 32px; }
+  .photo-ok   { background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border-color: #00873C; }
+  .photo-ng   { background: linear-gradient(135deg, #fce4ec, #f8bbd0); border-color: #E8192C; opacity: 0.7; }
+  .photo-info { padding: 8px 10px; background: #fff; }
+  .photo-tag  { font-size: 9px; font-weight: 800; padding: 1px 6px; border-radius: 3px; display: inline-block; margin-bottom: 3px; }
+  .ok-tag { background: #00873C; color: #fff; }
+  .ng-tag { background: #E8192C; color: #fff; }
+  .photo-desc { font-size: 11px; color: #444; }
+
+  .composition { background: #f0f5ff; border-radius: 10px; padding: 16px; }
+  .comp-mock { display: flex; gap: 0; border-radius: 8px; overflow: hidden; border: 1px solid #c5d9f5; height: 80px; }
+  .comp-text  { flex: 1; background: #fff; display: flex; align-items: center; padding: 12px; }
+  .comp-text-inner { font-size: 11px; color: #555; }
+  .comp-text-inner strong { display: block; font-size: 14px; font-weight: 800; color: #003070; }
+  .comp-photo { width: 90px; background: linear-gradient(135deg, #1469C7, #003070); display: flex; align-items: center; justify-content: center; font-size: 28px; }
+  .comp-label { font-size: 11px; color: #1469C7; font-weight: 700; margin-top: 8px; text-align: center; }
+
+  .badge-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .badge { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; font-weight: 900; font-size: 14px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); }
+  .badge-gokaku { background: #FFE030; color: #003070; }
+  .badge-green  { background: #00873C; color: #fff; font-size: 12px; }
+  .badge-red    { background: #E8192C; color: #fff; font-size: 11px; }
+  .badge-label  { font-size: 11px; color: #666; }
+
+  .rule-list { list-style: none; }
+  .rule-list li { display: flex; gap: 8px; padding: 8px 0; border-bottom: 1px solid #f3f3f3; font-size: 13px; color: #333; }
+  .rule-list li:last-child { border-bottom: none; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: #1469C7; margin-top: 5px; flex-shrink: 0; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h2>ビジュアル・写真の方向性</h2>
+
+  <div class="section">
+    <div class="section-label">生徒写真 ─ OK / NG</div>
+    <div class="photo-grid">
+      <div class="photo-card photo-ok">
+        <div class="photo-thumb">✊</div>
+        <div class="photo-info"><span class="photo-tag ok-tag">OK</span><div class="photo-desc">ガッツポーズ</div></div>
+      </div>
+      <div class="photo-card photo-ok">
+        <div class="photo-thumb">😊</div>
+        <div class="photo-info"><span class="photo-tag ok-tag">OK</span><div class="photo-desc">笑顔・上を向く</div></div>
+      </div>
+      <div class="photo-card photo-ng">
+        <div class="photo-thumb">😔</div>
+        <div class="photo-info"><span class="photo-tag ng-tag">NG</span><div class="photo-desc">ネガティブ表情</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">定番レイアウト構図</div>
+    <div class="composition">
+      <div class="comp-mock">
+        <div class="comp-text">
+          <div class="comp-text-inner">
+            <strong>テキスト・実績</strong>
+            左側に情報を配置
+          </div>
+        </div>
+        <div class="comp-photo">👩‍🎓</div>
+      </div>
+      <div class="comp-label">← テキスト左 ／ 生徒写真は右側に大きく →</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">装飾バッジ</div>
+    <div class="badge-row">
+      <div class="badge badge-gokaku">合格</div>
+      <div class="badge-label">合格バッジ<br>（円形・黄色）</div>
+      <div class="badge badge-green">高校<br>入試</div>
+      <div class="badge-label">カテゴリバッジ<br>（緑・白文字）</div>
+      <div class="badge badge-red">速報</div>
+      <div class="badge-label">速報バッジ<br>（赤・白文字）</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">制作チェックリスト</div>
+    <ul class="rule-list">
+      <li><div class="dot"></div>生徒写真：学校制服着用を優先</li>
+      <li><div class="dot"></div>会場案内チラシ：地図画像を必ず入れる</li>
+      <li><div class="dot"></div>チラシ全般：QRコードを必ず入れる（申込・詳細誘導）</li>
+      <li><div class="dot"></div>お祝い系：さくら・旗・リボン装飾でお祝い感を演出</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

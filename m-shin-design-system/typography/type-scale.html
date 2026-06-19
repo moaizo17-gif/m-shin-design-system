@@ -1,0 +1,95 @@
+<!-- @dsCard group="Typography" -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif; background: #f5f7fa; padding: 32px; }
+  .card { background: #fff; border-radius: 12px; padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+  h2 { font-size: 18px; font-weight: 800; color: #003070; margin-bottom: 24px; }
+  .type-row { display: flex; align-items: baseline; gap: 24px; padding: 16px 0; border-bottom: 1px solid #f0f0f0; }
+  .type-row:last-of-type { border-bottom: none; }
+  .type-meta { width: 160px; flex-shrink: 0; }
+  .type-role { font-size: 10px; color: #888; font-weight: 700; letter-spacing: 1px; }
+  .type-spec { font-size: 12px; color: #1469C7; font-weight: 600; margin-top: 2px; }
+  .type-style { font-size: 11px; color: #aaa; margin-top: 1px; }
+  .type-sample { color: #1a1a2e; }
+  .s-catch  { font-size: 40px; font-weight: 900; }
+  .s-h1     { font-size: 28px; font-weight: 900; }
+  .s-h2     { font-size: 20px; font-weight: 800; }
+  .s-body   { font-size: 14px; font-weight: 400; }
+  .s-note   { font-size: 10px; font-weight: 300; color: #777; }
+  .s-num    { font-size: 52px; font-weight: 900; color: #1469C7; line-height: 1; }
+  .rule-box { background: #f0f5ff; border-radius: 8px; padding: 16px 20px; margin-top: 24px; }
+  .rule-item { display: flex; gap: 8px; margin-bottom: 6px; font-size: 13px; color: #333; }
+  .rule-item:last-child { margin-bottom: 0; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: #1469C7; margin-top: 5px; flex-shrink: 0; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h2>タイポグラフィ</h2>
+
+  <div class="type-row">
+    <div class="type-meta">
+      <div class="type-role">MAIN CATCH</div>
+      <div class="type-spec">60pt以上 / 極太</div>
+      <div class="type-style">チラシのキャッチ</div>
+    </div>
+    <div class="type-sample s-catch">本気の今が、</div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-meta">
+      <div class="type-role">HEADING 1</div>
+      <div class="type-spec">40〜60pt / Bold</div>
+      <div class="type-style">大見出し</div>
+    </div>
+    <div class="type-sample s-h1">高校入試対策</div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-meta">
+      <div class="type-role">HEADING 2</div>
+      <div class="type-spec">24〜36pt / Bold</div>
+      <div class="type-style">セクション見出し</div>
+    </div>
+    <div class="type-sample s-h2">そっくりテストの特長</div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-meta">
+      <div class="type-role">BODY</div>
+      <div class="type-spec">12〜14pt / Regular</div>
+      <div class="type-style">本文・説明文</div>
+    </div>
+    <div class="type-sample s-body">生徒それぞれの理解度や性格に合わせた指導で、確実に力を伸ばしていきます。</div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-meta">
+      <div class="type-role">CAPTION</div>
+      <div class="type-spec">9〜10pt / Light</div>
+      <div class="type-style">注釈・出典</div>
+    </div>
+    <div class="type-sample s-note">※試験当日に受験できない場合は別日程で振替受験できます</div>
+  </div>
+
+  <div class="type-row">
+    <div class="type-meta">
+      <div class="type-role">NUMBER</div>
+      <div class="type-spec">80〜120pt / Black</div>
+      <div class="type-style">実績強調数字</div>
+    </div>
+    <div class="type-sample s-num">134<span style="font-size:22px;font-weight:700;color:#003070;">名</span></div>
+  </div>
+
+  <div class="rule-box">
+    <div class="rule-item"><div class="dot"></div>和文はゴシック系統一（明朝体は使わない）</div>
+    <div class="rule-item"><div class="dot"></div>実績数字は極太・特大で配置。数字だけで伝わるインパクトを意識</div>
+    <div class="rule-item"><div class="dot"></div>英数字（M進ロゴ・英字）はサンセリフ系</div>
+  </div>
+</div>
+</body>
+</html>

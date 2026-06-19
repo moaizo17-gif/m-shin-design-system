@@ -1,0 +1,95 @@
+<!-- @dsCard group="Copywriting" -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif; background: #f5f7fa; padding: 32px; }
+  .card { background: #fff; border-radius: 12px; padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+  h2 { font-size: 18px; font-weight: 800; color: #003070; margin-bottom: 24px; }
+  .section { margin-bottom: 28px; }
+  .section-label { font-size: 11px; font-weight: 700; color: #1469C7; letter-spacing: 2px; margin-bottom: 12px; }
+  .tone-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .tone-card { border-radius: 8px; padding: 14px 16px; }
+  .tone-card.flyer  { background: #fff3f4; border-left: 4px solid #E8192C; }
+  .tone-card.pptx   { background: #f0f5ff; border-left: 4px solid #1469C7; }
+  .tone-card.story  { background: #fffbea; border-left: 4px solid #FFE030; }
+  .tone-card.parent { background: #f0fff6; border-left: 4px solid #00873C; }
+  .tone-label { font-size: 10px; font-weight: 800; color: #555; letter-spacing: 1px; margin-bottom: 4px; }
+  .tone-name  { font-size: 14px; font-weight: 800; color: #1a1a2e; margin-bottom: 6px; }
+  .tone-keys  { font-size: 11px; color: #555; line-height: 1.7; }
+  .rule-list { list-style: none; }
+  .rule-list li { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid #f3f3f3; font-size: 13px; color: #333; }
+  .rule-list li:last-child { border-bottom: none; }
+  .icon { font-size: 14px; flex-shrink: 0; }
+  .phrase-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+  .phrase { background: #f0f5ff; color: #1469C7; font-size: 12px; font-weight: 700; padding: 5px 12px; border-radius: 20px; border: 1px solid #c5d9f5; }
+  .ng-row { display: flex; gap: 16px; align-items: center; padding: 8px 0; font-size: 13px; }
+  .ng-label { background: #E8192C; color: #fff; font-size: 10px; font-weight: 800; padding: 2px 7px; border-radius: 4px; flex-shrink: 0; }
+  .ok-label { background: #00873C; color: #fff; font-size: 10px; font-weight: 800; padding: 2px 7px; border-radius: 4px; flex-shrink: 0; }
+  .arrow { color: #aaa; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h2>コピーライティング指針</h2>
+
+  <div class="section">
+    <div class="section-label">媒体別トーン</div>
+    <div class="tone-grid">
+      <div class="tone-card flyer">
+        <div class="tone-label">FLYER / 告知</div>
+        <div class="tone-name">力強い・断言型</div>
+        <div class="tone-keys">「本気」「実績」「No.1」<br>「無料」「今すぐ」「！」</div>
+      </div>
+      <div class="tone-card pptx">
+        <div class="tone-label">SEMINAR / PPTX</div>
+        <div class="tone-name">論理的・教育的</div>
+        <div class="tone-keys">データ・根拠・具体策<br>ステップ・「。」</div>
+      </div>
+      <div class="tone-card story">
+        <div class="tone-label">合格体験記</div>
+        <div class="tone-name">感情的・共感型</div>
+        <div class="tone-keys">生徒の言葉そのまま<br>「！」多用・体験談</div>
+      </div>
+      <div class="tone-card parent">
+        <div class="tone-label">保護者向け</div>
+        <div class="tone-name">安心感・信頼</div>
+        <div class="tone-keys">実績数字・サポート<br>個別対応・安心感</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">コピーのルール</div>
+    <ul class="rule-list">
+      <div class="ng-row">
+        <span class="ng-label">NG</span>多くの合格者が出ました
+        <span class="arrow">→</span>
+        <span class="ok-label">OK</span>134名合格
+      </div>
+      <li><span class="icon">✦</span>「！」は告知・煽り、「。」は説明・本文で使い分ける</li>
+      <li><span class="icon">✦</span>根拠のない誇大表現はNG。数字・データで裏付ける</li>
+      <li><span class="icon">✦</span>「この言葉は生徒の可能性を肯定しているか？」で判断</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-label">推奨フレーズ</div>
+    <div class="phrase-grid">
+      <span class="phrase">本気の〇〇</span>
+      <span class="phrase">一人ひとり</span>
+      <span class="phrase">可能性</span>
+      <span class="phrase">限界はない</span>
+      <span class="phrase">まだ伸びる</span>
+      <span class="phrase">学ぶ力がつく</span>
+      <span class="phrase">無限の可能性</span>
+      <span class="phrase">能力無限</span>
+      <span class="phrase">諦めず</span>
+      <span class="phrase">全力で</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>
